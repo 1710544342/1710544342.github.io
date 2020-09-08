@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1710544342.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-08T11:03:19.467Z</updated>
+    <updated>2020-09-08T11:18:18.032Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1710544342.github.io"/>
     <link rel="self" href="https://1710544342.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://1710544342.github.io/images/avatar.png</logo>
     <icon>https://1710544342.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[创建邮件发送组件]]></title>
+        <id>https://1710544342.github.io/post/chuang-jian-you-jian-fa-song-zu-jian/</id>
+        <link href="https://1710544342.github.io/post/chuang-jian-you-jian-fa-song-zu-jian/">
+        </link>
+        <updated>2020-09-08T11:05:37.000Z</updated>
+        <content type="html"><![CDATA[<p>第一步、创建邮件实体类Mail，方便实体类读取配置的邮件参数以及发送时使用<br>
+<img src="https://1710544342.github.io/post-images/1599563740761.png" alt="" loading="lazy"><br>
+第二步、创建邮件工具类MailUtil<br>
+<img src="https://1710544342.github.io/post-images/1599563873113.PNG" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://1710544342.github.io/post/hello-gridea/</id>
