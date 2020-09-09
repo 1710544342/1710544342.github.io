@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1710544342.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-08T11:19:12.320Z</updated>
+    <updated>2020-09-09T11:27:16.120Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1710544342.github.io"/>
     <link rel="self" href="https://1710544342.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://1710544342.github.io/images/avatar.png</logo>
     <icon>https://1710544342.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[配置公共异常相关类]]></title>
+        <id>https://1710544342.github.io/post/pei-zhi-gong-gong-yi-chang-xiang-guan-lei/</id>
+        <link href="https://1710544342.github.io/post/pei-zhi-gong-gong-yi-chang-xiang-guan-lei/">
+        </link>
+        <updated>2020-09-09T11:17:13.000Z</updated>
+        <content type="html"><![CDATA[<p>第一步、创建公共异常枚举父类AbstractBaseExceptionEnum，此类为所有异常枚举类的基础类<img src="https://1710544342.github.io/post-images/1599650532520.PNG" alt="" loading="lazy"><br>
+第二步、创建系统异常枚举类CoreExceptionEnum，此类将设定所有系统将会抛出的异常信息<br>
+<img src="https://1710544342.github.io/post-images/1599650746618.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599650753915.PNG" alt="" loading="lazy"><br>
+第三步、创建业务异常枚举类BizExceptionEnum，此类将设定所有业务将会抛出的异常信息<br>
+<img src="https://1710544342.github.io/post-images/1599650680193.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599650684460.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599650688356.PNG" alt="" loading="lazy"><br>
+第四步、创建系统异常类ServiceException，此类将在全局异常中针对系统级异常统一处理<br>
+<img src="https://1710544342.github.io/post-images/1599650815772.PNG" alt="" loading="lazy"><br>
+完成</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[创建邮件发送组件]]></title>
         <id>https://1710544342.github.io/post/chuang-jian-you-jian-fa-song-zu-jian/</id>
