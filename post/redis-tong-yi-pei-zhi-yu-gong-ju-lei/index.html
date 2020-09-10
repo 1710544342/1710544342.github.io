@@ -2,18 +2,20 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>创建邮件发送组件 | Gridea</title>
+<title>Redis统一配置与工具类 | Gridea</title>
 <link rel="shortcut icon" href="https://1710544342.github.io/favicon.ico?v=1599738691736">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://1710544342.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="创建邮件发送组件 | Gridea - Atom Feed" href="https://1710544342.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="Redis统一配置与工具类 | Gridea - Atom Feed" href="https://1710544342.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="第一步、创建邮件实体类Mail，方便实体类读取配置的邮件参数以及发送时使用
+    <meta name="description" content="第一步、创建Redis中FastJson序列化类，自定义Redis的数据序列化方式
 
-第二步、创建邮件工具类MailUtil
+第二步、创建Redis配置类，该类为系统提供Redis相关配置
+
+第三步、创建Redis工具类，该类包含所有操作Redis的方法实现，便于其他接口使用
 
 ..." />
     <meta name="keywords" content="" />
@@ -78,11 +80,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              创建邮件发送组件
+              Redis统一配置与工具类
             </h2>
             <div class="post-info">
               <span>
-                2020-09-08
+                2020-09-10
               </span>
               <span>
                 1 min read
@@ -92,10 +94,15 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>第一步、创建邮件实体类Mail，方便实体类读取配置的邮件参数以及发送时使用<br>
-<img src="https://1710544342.github.io/post-images/1599563740761.png" alt="" loading="lazy"><br>
-第二步、创建邮件工具类MailUtil<br>
-<img src="https://1710544342.github.io/post-images/1599563873113.PNG" alt="" loading="lazy"></p>
+                <p>第一步、创建Redis中FastJson序列化类，自定义Redis的数据序列化方式<br>
+<img src="https://1710544342.github.io/post-images/1599738541400.PNG" alt="" loading="lazy"><br>
+第二步、创建Redis配置类，该类为系统提供Redis相关配置<br>
+<img src="https://1710544342.github.io/post-images/1599738563968.PNG" alt="" loading="lazy"><br>
+第三步、创建Redis工具类，该类包含所有操作Redis的方法实现，便于其他接口使用<br>
+<img src="https://1710544342.github.io/post-images/1599738653919.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599738658420.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599738664371.PNG" alt="" loading="lazy"><br>
+完成</p>
 
               </div>
               <div class="toc-container">
@@ -108,9 +115,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://1710544342.github.io/post/hello-gridea/">
+            <a href="https://1710544342.github.io/post/pei-zhi-gong-gong-yi-chang-xiang-guan-lei/">
               <h3 class="post-title">
-                Hello Gridea
+                配置公共异常相关类
               </h3>
             </a>
           </div>

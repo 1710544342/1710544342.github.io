@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1710544342.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-09T11:28:53.888Z</updated>
+    <updated>2020-09-10T11:51:43.969Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1710544342.github.io"/>
     <link rel="self" href="https://1710544342.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://1710544342.github.io/images/avatar.png</logo>
     <icon>https://1710544342.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Redis统一配置与工具类]]></title>
+        <id>https://1710544342.github.io/post/redis-tong-yi-pei-zhi-yu-gong-ju-lei/</id>
+        <link href="https://1710544342.github.io/post/redis-tong-yi-pei-zhi-yu-gong-ju-lei/">
+        </link>
+        <updated>2020-09-10T11:45:58.000Z</updated>
+        <content type="html"><![CDATA[<p>第一步、创建Redis中FastJson序列化类，自定义Redis的数据序列化方式<br>
+<img src="https://1710544342.github.io/post-images/1599738541400.PNG" alt="" loading="lazy"><br>
+第二步、创建Redis配置类，该类为系统提供Redis相关配置<br>
+<img src="https://1710544342.github.io/post-images/1599738563968.PNG" alt="" loading="lazy"><br>
+第三步、创建Redis工具类，该类包含所有操作Redis的方法实现，便于其他接口使用<br>
+<img src="https://1710544342.github.io/post-images/1599738653919.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599738658420.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599738664371.PNG" alt="" loading="lazy"><br>
+完成</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[配置公共异常相关类]]></title>
         <id>https://1710544342.github.io/post/pei-zhi-gong-gong-yi-chang-xiang-guan-lei/</id>
