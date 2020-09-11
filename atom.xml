@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1710544342.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-10T11:53:13.920Z</updated>
+    <updated>2020-09-11T11:52:52.113Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1710544342.github.io"/>
     <link rel="self" href="https://1710544342.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://1710544342.github.io/images/avatar.png</logo>
     <icon>https://1710544342.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[JSON序列化统一配置]]></title>
+        <id>https://1710544342.github.io/post/json-xu-lie-hua-tong-yi-pei-zhi/</id>
+        <link href="https://1710544342.github.io/post/json-xu-lie-hua-tong-yi-pei-zhi/">
+        </link>
+        <updated>2020-09-11T11:42:21.000Z</updated>
+        <content type="html"><![CDATA[<p>第一步、创建自定义HttpMessageConverter请求响应信息转换类CustomFastJsonHttpMessageConverter并复制FastJsonHttpMessageConverter类代码到当前类并添加调整请求数据方法getRequestData和在方法readType中添加请求数据处理逻辑<br>
+<img src="https://1710544342.github.io/post-images/1599825054829.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825059282.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825063645.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825081662.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825085387.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825089840.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825093277.PNG" alt="" loading="lazy"><br>
+第二步、创建FastJSON配置类，此类配置处理JSON的相关配置<br>
+<img src="https://1710544342.github.io/post-images/1599825145349.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1599825155968.PNG" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Redis统一配置与工具类]]></title>
         <id>https://1710544342.github.io/post/redis-tong-yi-pei-zhi-yu-gong-ju-lei/</id>
