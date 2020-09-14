@@ -2,22 +2,24 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Redis统一配置与工具类 | Gridea</title>
+<title>创建认证接口 | Gridea</title>
 <link rel="shortcut icon" href="https://1710544342.github.io/favicon.ico?v=1600084487060">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://1710544342.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Redis统一配置与工具类 | Gridea - Atom Feed" href="https://1710544342.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="创建认证接口 | Gridea - Atom Feed" href="https://1710544342.github.io/atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="第一步、创建Redis中FastJson序列化类，自定义Redis的数据序列化方式
+    <meta name="description" content="创建认证接口
 
-第二步、创建Redis配置类，该类为系统提供Redis相关配置
 
-第三步、创建Redis工具类，该类包含所有操作Redis的方法实现，便于其他接口使用
-
-..." />
+代码：
+import com.common.platform.auth.pojo.LoginUser;
+import java.util.List;
+public interface AuthService {
+/**
+*..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
@@ -80,11 +82,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Redis统一配置与工具类
+              创建认证接口
             </h2>
             <div class="post-info">
               <span>
-                2020-09-10
+                2020-09-14
               </span>
               <span>
                 1 min read
@@ -94,15 +96,71 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>第一步、创建Redis中FastJson序列化类，自定义Redis的数据序列化方式<br>
-<img src="https://1710544342.github.io/post-images/1599738541400.PNG" alt="" loading="lazy"><br>
-第二步、创建Redis配置类，该类为系统提供Redis相关配置<br>
-<img src="https://1710544342.github.io/post-images/1599738563968.PNG" alt="" loading="lazy"><br>
-第三步、创建Redis工具类，该类包含所有操作Redis的方法实现，便于其他接口使用<br>
-<img src="https://1710544342.github.io/post-images/1599738653919.PNG" alt="" loading="lazy"><br>
-<img src="https://1710544342.github.io/post-images/1599738658420.PNG" alt="" loading="lazy"><br>
-<img src="https://1710544342.github.io/post-images/1599738664371.PNG" alt="" loading="lazy"><br>
-完成</p>
+                <p>创建认证接口<br>
+<img src="https://1710544342.github.io/post-images/1600084439792.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1600084444754.PNG" alt="" loading="lazy"><br>
+代码：<br>
+import com.common.platform.auth.pojo.LoginUser;</p>
+<p>import java.util.List;</p>
+<p>public interface AuthService {<br>
+/**<br>
+* 登录<br>
+* @param username 账号<br>
+* @param password 密码<br>
+* @return token<br>
+*/<br>
+String login(String username, String password);</p>
+<pre><code>/**
+ * 登录（直接用账号登录）
+ *
+ * @param username 账号
+ * @return token
+ */
+String login(String username);
+
+/**
+ * 创建登录cookie
+ */
+void addLoginCookie(String token);
+
+/**
+ * 退出当前用户
+ */
+void logout();
+
+/**
+ * 退出
+ *
+ * @param token
+ */
+void logout(String token);
+
+/**
+ * 根据账号获取登录用户
+ *
+ * @param account 账号
+ * @return LoginUser
+ */
+LoginUser user(String account);
+
+/**
+ * 获取权限列表通过角色id
+ *
+ * @param roleId 角色id
+ */
+List&lt;String&gt; findPermissionsByRoleId(Long roleId);
+
+/**
+ * 检查当前登录用户是否拥有指定的角色访问当
+ */
+boolean check(String[] roleNames);
+
+/**
+ * 检查当前登录用户是否拥有当前请求的权限
+ */
+boolean checkAll();
+</code></pre>
+<p>}</p>
 
               </div>
               <div class="toc-container">
@@ -115,9 +173,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://1710544342.github.io/post/pei-zhi-gong-gong-yi-chang-xiang-guan-lei/">
+            <a href="https://1710544342.github.io/post/json-xu-lie-hua-tong-yi-pei-zhi/">
               <h3 class="post-title">
-                配置公共异常相关类
+                JSON序列化统一配置
               </h3>
             </a>
           </div>

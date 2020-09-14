@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://1710544342.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-11T11:53:06.906Z</updated>
+    <updated>2020-09-14T11:54:57.486Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://1710544342.github.io"/>
     <link rel="self" href="https://1710544342.github.io/atom.xml"/>
@@ -10,6 +10,79 @@
     <logo>https://1710544342.github.io/images/avatar.png</logo>
     <icon>https://1710544342.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[创建认证接口]]></title>
+        <id>https://1710544342.github.io/post/chuang-jian-ren-zheng-jie-kou/</id>
+        <link href="https://1710544342.github.io/post/chuang-jian-ren-zheng-jie-kou/">
+        </link>
+        <updated>2020-09-14T11:50:34.000Z</updated>
+        <content type="html"><![CDATA[<p>创建认证接口<br>
+<img src="https://1710544342.github.io/post-images/1600084439792.PNG" alt="" loading="lazy"><br>
+<img src="https://1710544342.github.io/post-images/1600084444754.PNG" alt="" loading="lazy"><br>
+代码：<br>
+import com.common.platform.auth.pojo.LoginUser;</p>
+<p>import java.util.List;</p>
+<p>public interface AuthService {<br>
+/**<br>
+* 登录<br>
+* @param username 账号<br>
+* @param password 密码<br>
+* @return token<br>
+*/<br>
+String login(String username, String password);</p>
+<pre><code>/**
+ * 登录（直接用账号登录）
+ *
+ * @param username 账号
+ * @return token
+ */
+String login(String username);
+
+/**
+ * 创建登录cookie
+ */
+void addLoginCookie(String token);
+
+/**
+ * 退出当前用户
+ */
+void logout();
+
+/**
+ * 退出
+ *
+ * @param token
+ */
+void logout(String token);
+
+/**
+ * 根据账号获取登录用户
+ *
+ * @param account 账号
+ * @return LoginUser
+ */
+LoginUser user(String account);
+
+/**
+ * 获取权限列表通过角色id
+ *
+ * @param roleId 角色id
+ */
+List&lt;String&gt; findPermissionsByRoleId(Long roleId);
+
+/**
+ * 检查当前登录用户是否拥有指定的角色访问当
+ */
+boolean check(String[] roleNames);
+
+/**
+ * 检查当前登录用户是否拥有当前请求的权限
+ */
+boolean checkAll();
+</code></pre>
+<p>}</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[JSON序列化统一配置]]></title>
         <id>https://1710544342.github.io/post/json-xu-lie-hua-tong-yi-pei-zhi/</id>
